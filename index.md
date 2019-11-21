@@ -33,3 +33,13 @@
 |[Vending Machine](pages/Vending Machine.md)|	472	  |2	      |7	      |21	    |8	      |256     |7	      |37		    |97%		  |83%	  |
 |[ZipMe](pages/ZipMe.md)          |	4,647 |3	      |311	    |33	    |13	      |24	     |343	    |22		    |41%		  |19%	  |
 
+
+
+
+
+We conduct an ad hoc literature review analyzing survey papers on testing configurable systems and well-known datasets of configurable systems
+
+All configurable systems found in the analyzed repositories.
+
+The intersection between configurable systems in the repositories analyzed.
+
