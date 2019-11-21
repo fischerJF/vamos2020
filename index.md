@@ -27,12 +27,9 @@
 |[Paycard](pages/Paycard.md)       |	374	  |2	      |8	      |27	    |4	      |6	     |10	    |13		    |88%		  |61%	  |
 |[Prop4J](pages/Prop4J.md)        |	1,138	|2	      |15	      |90	    |17	      |5029    |17	    |63		    |71%		  |67%	  |
 |[Sudoku](pages/Sudoku.md)       |	949	  |2	      |13	      |51	    |6	      |20	     |53	    |35		    |80%		  |67%	  |
-|[TaskObserver](pages/TaskObserver.md)
-  |	486	  |2	      |10	      |33	    |3	      |8	     |9	      |24		    |91%		  |71%	  |
-|[Telecom](pages/Telecom.md)
-      |	273	  |2	      |40	      |11	    |3	      |4	     |6	      |26		    |99%		  |65%	  |
-|[UnionFindSPL](pages/UnionFindSPL.md)
-  |	335	  |2	      |36	      |5	    |13	      |10	     |12	    |40		    |84%		  |66%	  |
+|[TaskObserver](pages/TaskObserver.md)  |	486	  |2	      |10	      |33	    |3	      |8	     |9	      |24		    |91%		  |71%	  |
+|[Telecom](pages/Telecom.md)      |	273	  |2	      |40	      |11	    |3	      |4	     |6	      |26		    |99%		  |65%	  |
+|[UnionFindSPL](pages/UnionFindSPL.md)  |	335	  |2	      |36	      |5	    |13	      |10	     |12	    |40		    |84%		  |66%	  |
 |[Vending Machine](pages/Vending Machine.md)|	472	  |2	      |7	      |21	    |8	      |256     |7	      |37		    |97%		  |83%	  |
 |[ZipMe](pages/ZipMe.md)          |	4,647 |3	      |311	    |33	    |13	      |24	     |343	    |22		    |41%		  |19%	  |
 
