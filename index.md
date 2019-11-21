@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/test4cc/vamos2020/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+|Name 	        |#LOC   | Packages|	Classes	|Methods|Features|	VC	   |Var     |	#Test |	Covarege|	Killed mutants|
+|-------        |-------|---------|---------|-------|--------|-------  |------- |-------|---------|---------      |
+|[ArgoUML](pages/ArgoUML.md)        |153,977|92       |1,812    |	13,034|	8	     |256      |        |1,326	 |	      |		-           |
+|ATM            |	 1,160|	2	      |27       |	100   |	7      |	80     |	44    |	76     |		91% |	           79%|
+|Bankaccount    |	189   |	3       |	9	      |22     |	10     |	144    |	13	  |	42     |		92% |         	 62%|
+|Checkstyle     |	61,435|	14      |	78      |	719	  |141	   |> 2 ^135 |		3   |        |     38%|               | 
+|Chess          |	2,149	|7	      |22	      |162	  |3	     |8	       |20	    |	77	   |   	72% |	72%           |
+|Companies      |	2,477	|16	      |50	      |244  	|10	     |192	     |255	    |	42	   |	70%   |	46%           |
+|Elevator       |	426	  |2	      |7	      |59	    |5	     |20	     |9		    | 59	   |	92%   |	73%           |
+|Email          |	429	  |3	      |7	      |49	    |8	     |40	     |30	    |	85	   |	97%	  |61%            |
+|FeatureAMP1    |	1,350	|4	      |15	      |93	    |28	      |6732	   |40	    |18		   |85%	    |46%            |
+|FeatureAMP2    |	2,033	|3	      |14	      |167	  |34	      |7020	   |55			|698	    |       |               |	
+|FeatureAMP3    |	2,575	|8	      |16	      |223	  |27	      |20500	 |93	    |	15	    |	      |               |	
+|FeatureAMP4    |	2,147	|2	      |57	      |203	  |27	      |6732	   |57	    |	12	    |622	  |82%            |	
+|FeatureAMP5    |	1,344	|3	      |9	      |895	  |29	      |3810	   |36	    |	17	    |730	  |91%	          |
+|FeatureAMP6    |	2,418	|8	      |30	      |202	  |38	      |21522   |76		  |	207	    |31%    |	              |
+|FeatureAMP7    |	5,644	|3	      |46	      |220	  |29	      |15795   |57			|		      |       |               |   
+|FeatureAMP8    |	2,376	|2	      |6	      |106	  |27	      |15708   |48	    |	78	  	|82%	  |42% 	          |
+|FeatureAMP9    |	1,859	|3	      |8	      |134	  |24	      |6732	   |53	    |	105		  |83%	  |63%	           |
+|GPL            |	1,235	|3	      |17	      |78	    |13	      |73	     |59	    |	51		  |83%	  |60%	            |
+|IntegerSetSPL  |	200	  |2	      |3	      |20	    |3	      |2	     |7	      |	19		  |100%   |	80%	         |
+|Jtopas         |	4397	|7	      |43	      |472    |	5	      |32	     |10	    |87			  |67%		  |50%	  |
+|MinePump       |	244	  |2	      |7	      |26	    |7	      |64	     |4	      |34		    |91%		  |65%	  |
+|Notepad        |	1564	|4	      |17	      |90	    |17	      |256     |24	    |25		    |59%		  |15%	  |
+|Paycard        |	374	  |2	      |8	      |27	    |4	      |6	     |10	    |13		    |88%		  |61%	  |
+|Prop4J         |	1,138	|2	      |15	      |90	    |17	      |5029    |17	    |63		    |71%		  |67%	  |
+|Sudoku         |	949	  |2	      |13	      |51	    |6	      |20	     |53	    |35		    |80%		  |67%	  |
+|TaskObserver   |	486	  |2	      |10	      |33	    |3	      |8	     |9	      |24		    |91%		  |71%	  |
+|Telecom        |	273	  |2	      |40	      |11	    |3	      |4	     |6	      |26		    |99%		  |65%	  |
+|UnionFindSPL   |	335	  |2	      |36	      |5	    |13	      |10	     |12	    |40		    |84%		  |66%	  |
+|Vending Machine|	472	  |2	      |7	      |21	    |8	      |256     |7	      |37		    |97%		  |83%	  |
+|ZipMe          |	4,647 |3	      |311	    |33	    |13	      |24	     |343	    |22		    |41%		  |19%	  |
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/test4cc/vamos2020/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
