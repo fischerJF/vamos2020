@@ -22,8 +22,7 @@
 |[GPL](pages/GPL.md)           |	1,235	|3	      |17	      |78	    |13	      |73	     |59	    |	51		  |83%	  |60%	            |
 |[IntegerSetSPL](pages/IntegerSetSPL.md)  |	200	  |2	      |3	      |20	    |3	      |2	     |7	      |	19		  |100%   |	80%	         |
 |[Jtopas](pages/Jtopas.md)        |	4397	|7	      |43	      |472    |	5	      |32	     |10	    |87			  |67%		  |50%	  |
-|[MinePump](pages/MinePump.md)
-       |	244	  |2	      |7	      |26	    |7	      |64	     |4	      |34		    |91%		  |65%	  |
+|[MinePump](pages/MinePump.md)       |	244	  |2	      |7	      |26	    |7	      |64	     |4	      |34		    |91%		  |65%	  |
 |[Notepad](pages/Notepad.md)        |	1564	|4	      |17	      |90	    |17	      |256     |24	    |25		    |59%		  |15%	  |
 |[Paycard](pages/Paycard.md)       |	374	  |2	      |8	      |27	    |4	      |6	     |10	    |13		    |88%		  |61%	  |
 |[Prop4J](pages/Prop4J.md)        |	1,138	|2	      |15	      |90	    |17	      |5029    |17	    |63		    |71%		  |67%	  |
