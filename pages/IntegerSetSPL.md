@@ -1,5 +1,5 @@
 ArgoUML
-![image](https://raw.githubusercontent.com/test4cc/vamos2020/master/featureModel/ArgoUML.JPG)
+![image](https://raw.githubusercontent.com/test4cc/vamos2020/master/featureModel/Set.JPG)
 
  [Metrics](https://github.com/test4cc/vamos2020/blob/master/metrics/Set.csv)
  
