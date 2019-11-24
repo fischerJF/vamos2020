@@ -1,6 +1,10 @@
-ArgoUML
-![image](https://raw.githubusercontent.com/test4cc/vamos2020/master/featureModel/ArgoUML.JPG)
+# Email
 
- [Metrics](https://github.com/test4cc/vamos2020/blob/master/metrics/Email.csv.csv)
+![image](https://raw.githubusercontent.com/test4cc/vamos2020/master/featureModel/Email.JPG)
+
+1. [Metrics](https://github.com/test4cc/vamos2020/blob/master/metrics/Email.csv)
  
- [source code with muntants](https://github.com/test4cc/vamos2020/tree/master/dataset_with_mutant/email)
+2. [source code with muntants](https://github.com/test4cc/vamos2020/tree/master/dataset_with_mutant/email)
+
+3. [Evaluation](https://github.com/test4cc/vamos2020/tree/master/workspace_IncLing/email)
+
