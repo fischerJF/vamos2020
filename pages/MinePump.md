@@ -1,6 +1,10 @@
-ArgoUML
-![image](https://raw.githubusercontent.com/test4cc/vamos2020/master/featureModel/ArgoUML.JPG)
 
-[Metrics](https://github.com/test4cc/vamos2020/blob/master/metrics/MinePump.csv)
+# MinePump
+
+![image](https://raw.githubusercontent.com/test4cc/vamos2020/master/featureModel/MinePump.JPG)
+
+1. [Metrics](https://github.com/test4cc/vamos2020/blob/master/metrics/MinePump.csv)
  
-[source code with muntants](https://github.com/test4cc/vamos2020/tree/master/dataset_with_mutant/MinePump)
+2. [source code with muntants](https://github.com/test4cc/vamos2020/tree/master/dataset_with_mutant/MinePump)
+
+3. [Evaluation](https://github.com/test4cc/vamos2020/tree/master/workspace_IncLing//MinePump)
