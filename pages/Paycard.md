@@ -1,6 +1,11 @@
-ArgoUML
-![image](https://raw.githubusercontent.com/test4cc/vamos2020/master/featureModel/ArgoUML.JPG)
+# PayCard
 
- [Metrics](https://github.com/test4cc/vamos2020/blob/master/metrics/Paycard.csv)
+![image](https://raw.githubusercontent.com/test4cc/vamos2020/master/featureModel/PayCard.JPG)
+
+1.[Metrics](https://github.com/test4cc/vamos2020/blob/master/metrics/Paycard.csv)
  
- [source code with muntants](https://github.com/test4cc/vamos2020/tree/master/dataset_with_mutant/Paycard)
+2.[source code with muntants](https://github.com/test4cc/vamos2020/tree/master/dataset_with_mutant/Paycard)
+ 
+3.[Evaluation](https://github.com/test4cc/vamos2020/tree/master/workspace_IncLing/Paycard)
+
+4.[Failures found](https://github.com/test4cc/vamos2020/blob/master/failuresFound/paycard.csv)
