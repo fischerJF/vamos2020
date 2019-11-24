@@ -8,3 +8,5 @@
 
 3.[Evaluation](https://github.com/test4cc/vamos2020/tree/master/workspace_IncLing/sudoku)
 
+4.[Failures found](https://github.com/test4cc/vamos2020/blob/master/failuresFound/sudoku.csv)
+
