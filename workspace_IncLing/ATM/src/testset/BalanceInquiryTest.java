@@ -36,19 +36,12 @@ public class BalanceInquiryTest {
 	public void setUp() {
 		
 	}
-
-
-	@Test
-	public void BalanceInquiryTest() {
-		
-	}
-
 	
 	@Test
 	public void printBalanceTest() {
 //		Configuration.BALANCE_INQUIRY=true;
 //		Configuration.LOGGING=true;
-		 if(Configuration.BALANCE_INQUIRY) {
+		 if(Configuration.BALANCE_INQUIRY && !Configuration.USER_INTERFACE) {
 			 ByteArrayOutputStream stream = new ByteArrayOutputStream();
 			 PrintStream ps = new PrintStream(stream);
 			 PrintStream originalPrintStream = System.out;
@@ -75,8 +68,4 @@ public class BalanceInquiryTest {
 		 }
 	}
 	
-	@Test
-	public void test() {
-		
-	}
 }

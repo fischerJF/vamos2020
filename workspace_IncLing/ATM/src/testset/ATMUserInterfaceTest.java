@@ -28,6 +28,7 @@ public class ATMUserInterfaceTest {
 
 	@After
 	public void tearDown() {
+		if(demo!=null)
 		demo.cleanUp();
 	}
 
@@ -113,7 +114,7 @@ public class ATMUserInterfaceTest {
 	public void testWhithDrawAllValue() {
 //		Configuration.WITHDRAWING_ALL_VALUES = true;
 //		Configuration.USER_INTERFACE = true;
-		if (Configuration.USER_INTERFACE && Configuration.WITHDRAWING_ALL_VALUES) {
+		if (Configuration.USER_INTERFACE && Configuration.WITHDRAWING_ALL_VALUES && Configuration.WITHDRAWING) {
 			
 			startATMdoingLogging();
 			String temp = "";
@@ -157,7 +158,7 @@ public class ATMUserInterfaceTest {
 	public void testTotalDeposit() {
 //		Configuration.ADMIN_CONTROL = true;
 //		Configuration.USER_INTERFACE = true;
-		if (Configuration.USER_INTERFACE && Configuration.ADMIN_CONTROL) {
+		if (Configuration.USER_INTERFACE && Configuration.ADMIN_CONTROL && Configuration.DEPOSITING) {
 			
 			startATMdoingLogging();
 			
@@ -226,7 +227,7 @@ public class ATMUserInterfaceTest {
 	@Test
 	public void testWithdrawUserAuthenticatedFalse() {
 //		Configuration.USER_INTERFACE = true;
-		if (Configuration.USER_INTERFACE && Configuration.DEPOSITING) {
+		if (Configuration.USER_INTERFACE && Configuration.WITHDRAWING) {
 			
 			startATMdoingLogging();
 			demo.button("Logout").click();

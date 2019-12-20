@@ -47,7 +47,7 @@ public class DepositTest {
 	@Test
 	public void testPromptForDepositAmountWithValidInput() throws Exception {
 //		Configuration.DEPOSITING = true;
-		if (Configuration.DEPOSITING) {
+		if (Configuration.DEPOSITING && !Configuration.USER_INTERFACE) {
 			ByteArrayOutputStream stream = new ByteArrayOutputStream();
 			PrintStream ps = new PrintStream(stream);
 			PrintStream originalPrintStream = System.out;
@@ -71,7 +71,7 @@ public class DepositTest {
 	@Test
 	public void testPromptForDepositAmountWithInvalidInput() throws Exception {
 //		Configuration.DEPOSITING = true;
-		if (Configuration.DEPOSITING) {
+		if (Configuration.DEPOSITING && !Configuration.USER_INTERFACE) {
 			ByteArrayOutputStream stream = new ByteArrayOutputStream();
 			PrintStream ps = new PrintStream(stream);
 			PrintStream originalPrintStream = System.out;

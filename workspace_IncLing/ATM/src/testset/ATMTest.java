@@ -140,7 +140,7 @@ public class ATMTest {
 	@Test
 	public void testCreateTransaction() throws Exception {
 //		Configuration.USER_INTERFACE=false;
-		if(!Configuration.USER_INTERFACE) {
+		if(!Configuration.USER_INTERFACE && Configuration.BALANCE_INQUIRY && Configuration.DEPOSITING) {
 			atm = new ATM();
 			ATM a = PowerMockito.mock(ATM.class);
 			Transaction trans = Whitebox.invokeMethod(a, "createTransaction",1);

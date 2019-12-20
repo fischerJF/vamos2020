@@ -170,7 +170,7 @@ public class WithdrawalTest {
 	@Test
 	public void testExecute() throws Exception {
 //		Configuration.USER_INTERFACE = false;
-		if (!Configuration.USER_INTERFACE) {
+		if (!Configuration.USER_INTERFACE && Configuration.WITHDRAWING) {
 			ByteArrayOutputStream stream = new ByteArrayOutputStream();
 			PrintStream ps = new PrintStream(stream);
 			PrintStream originalPrintStream = System.out;

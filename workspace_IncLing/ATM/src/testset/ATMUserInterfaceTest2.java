@@ -395,5 +395,5 @@ public class ATMUserInterfaceTest2 {
         assertTrue(JTA.getWrapStyleWord()); 
 		
 	}
-
+	
 }
