@@ -134,6 +134,8 @@ public class SpreadsheetGen {
 				UnaryExpr ue = (UnaryExpr)parent;
 				if (ue.getOperator().equals(UnaryExpr.Operator.LOGICAL_COMPLEMENT)) {
 					System.out.println("Negation: " + parent);
+					FeatureEntry general = retrieveFeatureEntry();
+					general.incrementOccurrences();
 					continue;
 				}
 				else {
@@ -193,7 +195,7 @@ public class SpreadsheetGen {
 		}
 	}
 
-	private static void updateInfo(FeatureInfo info, int qtdLines) {
+	private static FeatureEntry retrieveFeatureEntry() {
 
 		String key = currentSystem + "." + currentFeature;
 		FeatureEntry general = allFeaturesInfo.get(key);
@@ -203,11 +205,19 @@ public class SpreadsheetGen {
 			allFeaturesInfo.put(key, general);
 		}
 
+		return general;
+	}
+	
+	private static void updateInfo(FeatureInfo info, int qtdLines) {
+
+		FeatureEntry general = retrieveFeatureEntry();
+
 		general.updateClasses(info.classs);
 		general.updateConstructors(info.constructor);
 		general.updateMethods(info.method);
 		general.updateBlocks(info.block);
 		general.updateLOCs(qtdLines);
+		general.incrementOccurrences();
 	}
 
 	private static FeatureInfo handleOperationAndClassInfo(Node parentNode) {

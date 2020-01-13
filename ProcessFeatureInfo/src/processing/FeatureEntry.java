@@ -20,6 +20,7 @@ public class FeatureEntry {
 	Set<String> methods = new HashSet<String>();
 	Set<String> blocks = new HashSet<String>(); // TODO block range (javaparser) may be enough
 	private long qtdLOCs = 0;
+	private int qtdOccurrences = 0; // feature variability points
 
 	public FeatureEntry(String system, String feature) {
 		this.system = system;
@@ -31,6 +32,7 @@ public class FeatureEntry {
 	long qtdMethods() { return methods.size(); };
 	long qtdBlocks() { return blocks.size(); };
 	long getQtdLOCs() { return qtdLOCs; }
+	long getQtdOccurrences() { return qtdOccurrences; }
 
 	void updateClasses(String classs) {
 		if (classs != null)
@@ -53,7 +55,11 @@ public class FeatureEntry {
 	}
 
 	void updateLOCs(int loc) {
-		qtdLOCs += loc;
+		this.qtdLOCs += loc;
+	}
+
+	public void incrementOccurrences() {
+		this.qtdOccurrences += 1;
 	}
 
 	@Override
@@ -76,7 +82,8 @@ public class FeatureEntry {
 				.append(this.qtdConstructors()).append(',')
 				.append(this.qtdMethods()).append(',')
 				.append(this.qtdBlocks()).append(',')
-				.append(this.getQtdLOCs());
+				.append(this.getQtdLOCs()).append(',')
+				.append(this.getQtdOccurrences());
 		return sb.toString();
 	}
 	
