@@ -149,7 +149,7 @@ public class SpreadsheetGen {
 			currentFeature = featureAccess.getNameAsString();
 			int beginLine = 0;
 			int endLine = 0;
-			FeatureInfo featureInfo = null;
+			FeatureInfoAux featureInfo = null;
 
 			if (tempCond.isPresent()) {
 
@@ -168,8 +168,18 @@ public class SpreadsheetGen {
 			else if (tempIf.isPresent()) {
 				IfStmt parentIf = tempIf.get();
 				System.out.println(parentIf);
+				
+				List<FieldAccessExpr> featureAccessesIf = parentIf.findAll(FieldAccessExpr.class,
+						x -> (x.getScope().toString().equals("Configuration") ||
+								x.getScope().toString().equals("specifications.Configuration"))
+								&& !x.getNameAsString().equals(currentFeature));
+				if (!featureAccessesIf.isEmpty()) {
+					retrieveFeatureEntry().updateOtherFeatures(1);
+					System.out.println(">> occurrences of other feature(s) in the above if\n");
+				}
 
 				// lines
+				// TODO check if statements with comments (e.g. GoNamespaceToDiagram.getRuleName in ArgoUML)
 				beginLine = parentIf.getBegin().get().line;
 				endLine = parentIf.getEnd().get().line;
 				
@@ -208,7 +218,7 @@ public class SpreadsheetGen {
 		return general;
 	}
 	
-	private static void updateInfo(FeatureInfo info, int qtdLines) {
+	private static void updateInfo(FeatureInfoAux info, int qtdLines) {
 
 		FeatureEntry general = retrieveFeatureEntry();
 
@@ -220,9 +230,9 @@ public class SpreadsheetGen {
 		general.incrementOccurrences();
 	}
 
-	private static FeatureInfo handleOperationAndClassInfo(Node parentNode) {
+	private static FeatureInfoAux handleOperationAndClassInfo(Node parentNode) {
 
-		FeatureInfo info = new FeatureInfo();
+		FeatureInfoAux info = new FeatureInfoAux();
 		@SuppressWarnings("rawtypes")
 		Optional<TypeDeclaration> opClass = parentNode.findAncestor(TypeDeclaration.class);
 		Optional<ConstructorDeclaration> opConstructor = parentNode.findAncestor(ConstructorDeclaration.class);

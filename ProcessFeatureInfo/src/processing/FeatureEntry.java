@@ -3,7 +3,7 @@ package processing;
 import java.util.HashSet;
 import java.util.Set;
 
-class FeatureInfo {
+class FeatureInfoAux {
 	String classs;
 	String method;
 	String constructor;
@@ -21,18 +21,20 @@ public class FeatureEntry {
 	Set<String> blocks = new HashSet<String>(); // TODO block range (javaparser) may be enough
 	private long qtdLOCs = 0;
 	private int qtdOccurrences = 0; // feature variability points
+	private int qtdOtherFeatures = 0; // current feature variability points containing other features 
 
 	public FeatureEntry(String system, String feature) {
 		this.system = system;
 		this.feature = feature;
 	}
 
-	long qtdClasses() { return classes.size(); };
-	long qtdConstructors() { return constructors.size(); };
-	long qtdMethods() { return methods.size(); };
-	long qtdBlocks() { return blocks.size(); };
-	long getQtdLOCs() { return qtdLOCs; }
-	long getQtdOccurrences() { return qtdOccurrences; }
+	long qtdClasses() { return this.classes.size(); };
+	long qtdConstructors() { return this.constructors.size(); };
+	long qtdMethods() { return this.methods.size(); };
+	long qtdBlocks() { return this.blocks.size(); };
+	long getQtdLOCs() { return this.qtdLOCs; }
+	long getQtdOccurrences() { return this.qtdOccurrences; }
+	long getQtdOtherFeatures() { return this.qtdOtherFeatures; }
 
 	void updateClasses(String classs) {
 		if (classs != null)
@@ -62,6 +64,10 @@ public class FeatureEntry {
 		this.qtdOccurrences += 1;
 	}
 
+	void updateOtherFeatures(int qtd) {
+		this.qtdOtherFeatures += qtd;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		
@@ -83,7 +89,8 @@ public class FeatureEntry {
 				.append(this.qtdMethods()).append(',')
 				.append(this.qtdBlocks()).append(',')
 				.append(this.getQtdLOCs()).append(',')
-				.append(this.getQtdOccurrences());
+				.append(this.getQtdOccurrences()).append(',')
+				.append(this.getQtdOtherFeatures());
 		return sb.toString();
 	}
 	

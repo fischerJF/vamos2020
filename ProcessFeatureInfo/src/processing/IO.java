@@ -56,7 +56,7 @@ public class IO {
 	 * TODO export to a .csv file
 	 */
 	public static void generateSpreadsheet(Map<String, FeatureEntry> allInfo) {
-		String head = "System,Feature,Classes,Constructors,Methods,Blocks,LOCs";
+		String head = "System,Feature,Classes,Constructors,Methods,Blocks,LOCs,Occurrences,Other Features";
 		System.out.println(head);
 		
 		for (String key : allInfo.keySet()) {
