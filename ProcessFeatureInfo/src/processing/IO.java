@@ -16,12 +16,11 @@ public class IO {
         CompilationUnit c = null;
 		try {
 			c = JavaParser.parse(inputFile);
-			return c;
-		} catch (FileNotFoundException e1) {
+		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
 		
-		return null;
+		return c;
 	}
 
 	/**
@@ -34,7 +33,7 @@ public class IO {
 		File directory = new File(rootPath);
 		
 		List<File> allJavaFiles = new ArrayList<>();
-		System.out.println(rootPath);
+//		System.out.println(rootPath);
 		
 		for (File path : directory.listFiles()) {
 			if (path.isFile() && path.getName().endsWith(".java")
